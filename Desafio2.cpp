@@ -54,14 +54,14 @@ int main(){
     no *P2;
     int J1=0, J2=0;
     int aux1, aux2;
-    P1 = inicializaPilha(P1);
+    P1 = inicializaPilha(P1); 
     P2 = inicializaPilha(P2);
     srand(time(0));
     for(int i=0; i<10; i++){
         P1 = PUSH(P1, (geraNum()));
         P2 = PUSH(P2, (geraNum()));
     }
-    cout << "==============================" << endl;
+    cout << "==============================" << endl; //Mostra pilha pós srand
     imprimePilha(P1);
     cout << endl;
     imprimePilha(P2);
@@ -90,7 +90,7 @@ int main(){
     else{
         cout << "Jogador 1: " << J1 << " pontos" << endl << "Jogador 2: " << J2 << " pontos" << endl << "Jogador 2 venceu!" << endl;
     }
-    cout << "==============================" << endl;
+    cout << "==============================" << endl; //Mostra pilha pós fim do jogo
     imprimePilha(P1);
     cout << endl;
     imprimePilha(P2);
